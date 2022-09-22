@@ -4,8 +4,8 @@ const Challengers = ({setChallenger1, setChallenger2}) => {
         <form
             onSubmit={ev => {
                 ev.preventDefault();
-                setChallenger1(ev.target.playerOne.value.toString());
-                setChallenger2(ev.target.playerTwo.value.toString());
+                setChallenger1(ev.target.playerOne.value);
+                setChallenger2(ev.target.playerTwo.value);
             }}
         >
             <input id='playerOne' type='text' name='playerOne' autoComplete='off'></input>
